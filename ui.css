@@ -57,14 +57,14 @@ button {
 	display: flex;
 	flex-direction: column;
 	background: white;
-	width: 250px;
+	width: 240px;
 }
 
 .section {
 	display: flex;
 	flex-direction: column;
 	padding: 10px 0;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #606060;
 }
 
 .subscription, .more-info {
@@ -81,11 +81,7 @@ button {
 	height: 24px;
 	width: 24px;
 	margin-right: 24px;
-	color: #606060;
-}
-
-.yt-icon {
-	color: #606060;
+	fill: #606060;
 }
 
 .circle-icon {
@@ -106,16 +102,35 @@ button {
 	font-weight: 400;
 }
 
-.menu-name {
-	color: #606060;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-
 .sidebar-item:hover {
 	background: #F2F2F2;
 }
 
 .sidebar-item:active {
 	background: #E5E5E5;
+}
+
+.item-name {
+	color: #606060;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.guide-link {
+	padding: 16px 24px;
+}
+
+.guide-link-item {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 500;
+	color: #606060;
+}
+
+.copyright {
+	padding: 16px 24px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.1rem;
+	color: #909090;
 }
