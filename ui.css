@@ -140,27 +140,53 @@ button {
 
 /* header */
 .header {
+	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 50px;
+	height: 56px;
+	padding: 0 16px;
 }
 
-.header-left, .header-center, .header-right {
+.header-left{
 	display: flex;
+	justify-content: left;
 	align-items: center;
 	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 .header-center {
+	display: flex;
 	justify-content: center;
+	padding: 0 10%;
+	margin-left: 40px;
+	width: 70%;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 728px;
+}
+
+@media (max-width: 657px) {
+	.header-center {
+		display: none;
+	}
+}
+
+.header-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 .menu-icon {
 	fill : #606060;
-	height: 35px;
-	width: 35px;
-	margin: 0 20px;
+	height: 40px;
+	width: 40px;
+	padding: 8px;
+	margin-right: 16px;
 }
 
 .header-logo {
@@ -170,12 +196,12 @@ button {
 	align-items: center;
 }
 
-.header-icon {
+.header-logo-icon {
 	fill: #FF0000;
 	height: 25px;
 }
 
-.header-icon-title {
+.header-logo-title {
 	color: black;
 	height: 25px;
 	font-weight: 900;
@@ -186,21 +212,9 @@ button {
 	transform:scale(1,1.5); /* W3C */
 }
 
-.header-icon-title > sup {
+.header-logo-title > sup {
 	color: #606060;
 	font-weight: 500;
-}
-
-.search {
-	display: flex;
-	align-items: center;
-	flex-grow: 1;
-}
-
-@media (max-width: 650px) {
-	.search {
-		display: none;
-	}
 }
 
 .search-input {
@@ -210,22 +224,18 @@ button {
 	border-bottom: 1px solid #D3D3D3;
 	border-right: 0;
 	display: flex;
-	width : 200%;
-	height: 26px;
 	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 1e-9px;
 }
 
 .search-button {
+	display: flex;
 	background-color: #F8F8F8;
 	border: 1px solid #D3D3D3;
 	width: 60px;
-	height: 30px;
-	display: flex;
-}
-
-.header-section {
-	display: flex;
-	justify-content: space-between;
+	flex-grow: 0;
+	flex-shrink: 0;
 }
 
 .header-item {
@@ -233,7 +243,14 @@ button {
 	align-items: center;
 }
 
-.button-name {
+.header-icon {
+	height: 24px;
+	width: 24px;
+	margin-right: 24px;
+	fill: #606060;
+}
+
+.name-button {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
@@ -244,4 +261,5 @@ button {
 	color: white;
 	border-radius: 50%;
 	font-size: 10px;
+	flex-shrink: 0;
 }
